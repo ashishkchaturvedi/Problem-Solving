@@ -1,7 +1,7 @@
 package com.linkedList;
 
 
-public class MegingTwoList {
+public class MergingTwoList {
 	
 	
 	Node head;
@@ -40,12 +40,16 @@ public class MegingTwoList {
 			System.out.println(temp.data);
 			temp = temp.next;
 		}
+//		while(list3 != null){
+//			System.out.println(list3.data);
+//			list3 = list3.next;
+//		}
 	}
 	
 
 	public static void main(String[] args) {
-		MegingTwoList list1 = new MegingTwoList();
-		MegingTwoList list2 = new MegingTwoList();
+		MergingTwoList list1 = new MergingTwoList();
+		MergingTwoList list2 = new MergingTwoList();
 		list1.head = new Node(1);
 		list1.head.next = new Node(2);
 		list1.head.next.next = new Node(4);
