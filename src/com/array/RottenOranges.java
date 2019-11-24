@@ -4,7 +4,6 @@ import java.util.Queue;
 
 public class RottenOranges {
 
-	private static final int EMPTY = 0;
 	private static final int FRESH = 1;
 	private static final int ROTTEN = 2;
 	private static final int[][] DIRECTIONS = new int[][]{{-1,0},{1,0},{0,-1},{0,1}};
