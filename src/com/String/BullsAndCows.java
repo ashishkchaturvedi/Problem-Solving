@@ -12,14 +12,25 @@ public class BullsAndCows {
 				a++;
 			}
 			else{
+				System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
+				System.out.println("Start reading for s:"+s+" and g:"+g );
+				System.out.println(stats[s]);
 				if(stats[s]++ < 0) b++;
+				System.out.println(stats[s]);
+				System.out.println("b after secret is: "+b);
+				System.out.println("==============================================");
+				System.out.println(stats[g]);
 				if(stats[g]-- > 0) b++;
+				System.out.println(stats[g]);
+				System.out.println("b after guess is: "+b);
+				System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++");
+				
 			}
 		}
 		return a+"A"+b+"B";
 	}
 	public static void main(String[] args) {
-		System.out.println(getHint("1123", "0111"));
+		System.out.println(getHint("1807", "7810"));
 
 	}
 
