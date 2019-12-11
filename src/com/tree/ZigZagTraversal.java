@@ -5,17 +5,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-//class TreeNode{
-//	int val;
-//	TreeNode left;
-//	TreeNode right;
-//	
-//	public TreeNode(int k){
-//		this.key = k;
-//		this.left = null;
-//		this.right = null;
-//	}
-//}
 
 public class ZigZagTraversal {
 
@@ -28,7 +17,7 @@ public class ZigZagTraversal {
 		root.right.left = new TreeNode(15);
 		root.right.right = new TreeNode(7);
 		
-		List<List<Integer>> res = new ArrayList();
+		List<List<Integer>> res = new ArrayList<List<Integer>>();
 		
 		res = zigzagLevelOrder(root);
 		
