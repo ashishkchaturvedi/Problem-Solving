@@ -4,8 +4,8 @@ public class ImlementstrSTR {
 
 	public static void main(String[] args) {
 		
-		String haystack = "aaaaa";
-		String needle = "bba";
+		String haystack = "ashish chaturvedi";
+		String needle = "hish c";
 		
 		System.out.println(strStr(haystack, needle));
 
