@@ -1,17 +1,5 @@
 package com.tree;
 
-//class TreeNode{
-//	int key;
-//	TreeNode left;
-//	TreeNode right;
-//	
-//	public TreeNode(int k){
-//		this.key = k;
-//		this.left = null;
-//		this.right = null;
-//	}
-//}
-
 
 public class SymmetricTree {
 
