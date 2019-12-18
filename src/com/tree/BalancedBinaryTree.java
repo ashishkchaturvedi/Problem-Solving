@@ -9,7 +9,7 @@ public class BalancedBinaryTree {
 		root.right = new TreeNode(20);
 		root.right.left = new TreeNode(15);
 		root.right.right = new TreeNode(7);
-		root.right.right.right = new TreeNode(14);
+		root.right.right.right = new TreeNode(14); 
 		
 		System.out.println(isBalanced(root));
 
