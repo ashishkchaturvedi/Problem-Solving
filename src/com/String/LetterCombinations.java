@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class LetterCombinations {
 
+	@SuppressWarnings("serial")
 	Map<String, String> phone = new HashMap<String, String>(){{
     put("2", "abc");
     put("3", "def");
@@ -21,7 +22,7 @@ public class LetterCombinations {
     
 	public static void main(String[] args) {
 		LetterCombinations lc = new LetterCombinations();
-		String digits = "234";
+		String digits = "23";
 		System.out.println(lc.letterCombinations(digits));
 
 	}
