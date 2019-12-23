@@ -41,7 +41,6 @@ public class MergekSortedLists {
         	if(node != null) nodesQueue.add(node);
         }
         
-        int i = 0;
         while(nodesQueue.peek() != null){
         	ListNode node = nodesQueue.remove();
         	if(node.next != null) nodesQueue.add(node.next);
