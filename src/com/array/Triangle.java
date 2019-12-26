@@ -32,7 +32,7 @@ public class Triangle {
 	
     public static int minimumTotal(List<List<Integer>> triangle) {
     	
-    	
+    	if(triangle.size() == 0) return 0;
     	int sum = 0;
     	
     	for(List<Integer> l : triangle){
@@ -47,7 +47,6 @@ public class Triangle {
     				}
     			}
     			sum += min;
-    			
     		}
     	}
     	return sum;
