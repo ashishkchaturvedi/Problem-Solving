@@ -24,6 +24,7 @@ public class DetectCapital {
 		    //  1. first and second characters are lower or first is capital and second character
 		    //     is lower
 		    boolean lower = !isFirstCapital&&!isSecondCapital || isFirstCapital&&!isSecondCapital;
+		    System.out.println("lower is:" +lower);
 		    
 		    // remaining characters should not lower if first and second characters are capital
 		    if( isFirstCapital && isSecondCapital) lower = false;
