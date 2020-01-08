@@ -26,18 +26,18 @@ public class AverageOfLevelBinaryTree {
         return res;
     }
 
-	private static void average(TreeNode t, int i, List<Double> sum, List<Integer> count) {
-		if (t == null)
+	private static void average(TreeNode root, int i, List<Double> res, List<Integer> count) {
+		if (root == null)
             return;
-        if (i < sum.size()) {
-            sum.set(i, sum.get(i) + t.key);
+        if (i < res.size()) {
+            res.set(i, res.get(i) + root.key);
             count.set(i, count.get(i) + 1);
         } else {
-            sum.add(1.0 * t.key);
+            res.add(1.0 * root.key);
             count.add(1);
         }
-        average(t.left, i + 1, sum, count);
-        average(t.right, i + 1, sum, count);
+        average(root.left, i + 1, res, count);
+        average(root.right, i + 1, res, count);
 		
 	}
 
