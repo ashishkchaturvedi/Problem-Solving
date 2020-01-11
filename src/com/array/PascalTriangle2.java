@@ -22,10 +22,6 @@ public class PascalTriangle2 {
             return triangle.get(0);
         }
 
-        // Second base case; first row is always [1].
-//        triangle.add(new ArrayList<>());
-//        triangle.get(0).add(1);
-
         for (int rowNum = 1; rowNum <= rowIndex; rowNum++) {
             List<Integer> row = new ArrayList<>();
             List<Integer> prevRow = triangle.get(rowNum-1);
