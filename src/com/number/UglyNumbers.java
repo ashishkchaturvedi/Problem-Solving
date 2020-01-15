@@ -5,7 +5,7 @@ public class UglyNumbers {
 	public static int getNthUglyNumber(int n){
 		int i = 1, count = 1;
 		
-		while(count < n){
+		while(n > count){
 			i++;
 			if(isUgly(i) == 1){
 				count++;
@@ -31,7 +31,7 @@ public class UglyNumbers {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(getNthUglyNumber(150));
+		System.out.println(getNthUglyNumber(1352));
 		
 
 	}
