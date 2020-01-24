@@ -13,17 +13,17 @@ public class DIStringMatch2 {
 	}
 	
 	public static int[] diStringMatch(String S) {
-        int N = S.length();
-        int lo = 0, hi = N;
-        int[] ans = new int[N + 1];
-        for (int i = 0; i < N; ++i) {
+        int n = S.length();
+        int lo = 0, hi = n;
+        int[] ans = new int[n + 1];
+        for (int i = 0; i < n; ++i) {
             if (S.charAt(i) == 'I')
                 ans[i] = lo++;
             else
                 ans[i] = hi--;
         }
 
-        ans[N] = lo;
+        ans[n] = lo;
         return ans;
     }
 
