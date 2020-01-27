@@ -33,12 +33,12 @@ public class LargestDivisibleSubset {
                 index = i;
             }
         }
-        List<Integer> res = new ArrayList<>();
+        List<Integer> ans = new ArrayList<>();
         while (index != -1) {
-            res.add(nums[index]);
+            ans.add(nums[index]);
             index = pre[index];
         }
-        return res;
+        return ans;
     }
 
 }
