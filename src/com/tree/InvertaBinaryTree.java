@@ -12,6 +12,7 @@ public class InvertaBinaryTree {
 		root.right.right = new TreeNode(9);
 		
 		inOrder(root);
+		TreeNode res = invertTree(root);
 		inOrder(res);
 	}
 	
