@@ -11,7 +11,7 @@ public class MergeIntervals {
 		
 		@Override
 		public int compare(int[] a, int[] b){
-			return a[0] > b[0] ? -1 : a[0] == b[0] ? 0 : 1;
+			return a[0] < b[0] ? -1 : a[0] == b[0] ? 0 : 1;
 		}
 	}
     public static int[][] merge(int[][] intervals) {
@@ -28,13 +28,12 @@ public class MergeIntervals {
     			merged.getLast()[1] = Math.max(merged.getLast()[1], interval[1]);
     		}
     	}
-    	System.out.println(merged);
     	return merged.toArray(new int[merged.size()][]);
     }
 	
 	public static void main(String[] args) {
 		
-		int[][] intervals = {{1,3},{2,6},{8,10},{15,18}};
+		int[][] intervals = {{1,9},{2,5},{19,20},{10,11},{12,20},{0,3},{0,1},{0,2}};
 		int[][] res = merge(intervals);
 		System.out.print("[");
 		for(int i = 0; i < res.length; i++){
