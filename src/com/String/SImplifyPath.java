@@ -18,19 +18,18 @@ public class SImplifyPath {
 		StringBuilder result = new StringBuilder();
 		
 		for(String directory : components){
-            if(directory.equals("..")){
-                if(!stack.isEmpty()){
-                   stack.pop(); 
-                }
-                
-            }
-            else if(directory.equals(".") || directory.isEmpty()){
-                continue;
-            }
-            else{
-                System.out.println("adding:" + directory);
-                stack.add(directory);
-            }
+			if(directory.equals(".") || stack.isEmpty()) {
+				continue;
+			}
+			
+			else if(directory.equals("..")){
+				if(!stack.isEmpty()){
+					stack.pop();
+				}
+			}
+			else{
+				stack.push(directory);
+			}
 		}
 		
 		for(String dir : stack){
