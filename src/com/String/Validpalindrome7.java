@@ -4,7 +4,7 @@ public class Validpalindrome7 {
 
 	public static void main(String[] args) {
 		
-		String s = "abca";
+		String s = "abc";
 		System.out.println(validPalindrome(s));
 	}
 	
@@ -20,7 +20,7 @@ public class Validpalindrome7 {
 	}
 
 	private static boolean isPalindromeRange(String s, int i, int j) {
-		for(int k = i; k <= i + (j-i)/2; k++){
+		for(int k = i; k <= (i + j)/2; k++){
 			if(s.charAt(k) != s.charAt(j-k + i)) return false;
 		}
 		
