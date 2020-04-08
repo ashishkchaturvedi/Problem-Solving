@@ -15,8 +15,8 @@ public class KthLargestElementInArray {
 	public static int findKthLargest(int[] nums, int k){
 		
 		Arrays.sort(nums);
-		int n = nums.length;
-		return nums[n-k];
+		int l = nums.length;
+		return nums[l-k];
 	}
 
 }
