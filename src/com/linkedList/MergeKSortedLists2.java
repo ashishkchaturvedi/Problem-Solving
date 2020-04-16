@@ -1,8 +1,6 @@
 package com.linkedList;
 
-import java.util.LinkedList;
 import java.util.PriorityQueue;
-import java.util.concurrent.LinkedBlockingDeque;
 
 public class MergeKSortedLists2 {
 
