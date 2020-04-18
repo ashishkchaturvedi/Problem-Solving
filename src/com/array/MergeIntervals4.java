@@ -9,7 +9,7 @@ public class MergeIntervals4 {
 
 	public static void main(String[] args) {
 		
-		int[][] intervals = {{1,3},{2,6},{8,10},{15,18},{17, 24}};
+		int[][] intervals = {{1,3},{2,6},{8,10},{15,18},{17, 24},{25,27},{26,30}};
 		int[][] ans = merge(intervals);
 		System.out.println(Arrays.deepToString(ans));
 
