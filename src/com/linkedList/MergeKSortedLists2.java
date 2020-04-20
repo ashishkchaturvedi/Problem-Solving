@@ -23,7 +23,11 @@ public class MergeKSortedLists2 {
 		ListNode list5 = new ListNode(12);
 		list5.next = new ListNode(15);
 		
-		ListNode[] lists = {list4, list1, list2, list3, list5};
+		ListNode list6 = new ListNode(24);
+		list6.next = new ListNode(48);
+		list6.next.next = new ListNode(96);
+		
+		ListNode[] lists = {list4, list1, list2, list3, list5, list6};
 		
 		ListNode res = mergeKLists(lists);
 		
