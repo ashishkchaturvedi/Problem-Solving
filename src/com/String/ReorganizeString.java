@@ -6,7 +6,7 @@ public class ReorganizeString {
 
 	public static void main(String[] args) {
 		
-		String S = "aab";
+		String S = "aabbbc";
 		System.out.println(reorganizeString(S));
 
 	}
