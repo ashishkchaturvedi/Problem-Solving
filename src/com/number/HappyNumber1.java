@@ -6,12 +6,10 @@ import java.util.Set;
 public class HappyNumber1 {
 
 	public static void main(String[] args) {
-		int n = 67;
+
 		for(int i = 1; i <= 100; i++){
 			System.out.println(i + " is happy: " + isHappy(i));
 		}
-		
-
 	}
 	
 	public static  boolean isHappy(int n){
