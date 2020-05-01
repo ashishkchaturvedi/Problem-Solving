@@ -4,7 +4,7 @@ public class LongestCommonSubsequence {
 
 	public static void main(String[] args) {
 		String text1 = "ABCDGHLQR";
-        String text2 = "AEDPHR";
+        String text2 = "AEDPHQR";
         System.out.println(longestCommonSubsequence(text1, text2));
 
 	}
