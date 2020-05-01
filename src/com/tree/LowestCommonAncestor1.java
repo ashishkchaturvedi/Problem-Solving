@@ -12,7 +12,7 @@ public class LowestCommonAncestor1 {
 		root.right = new TreeNode(3);
 		root.right.left = new TreeNode(6);
 		root.right.right = new TreeNode(7);
-		TreeNode result = lowestCommonAncestor(root, root.right, root.right.left);
+		TreeNode result = lowestCommonAncestor(root, root.left, root.right.left);
 		System.out.println(result.key);
 
 	}
